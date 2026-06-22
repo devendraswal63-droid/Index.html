@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cab Service India | 24x7 Taxi Booking</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;line-height:1.6}
+header{background:#111;color:#fff;padding:20px;text-align:center}
+.hero{padding:60px 20px;text-align:center;background:#f4f4f4}
+.btn{padding:12px 20px;text-decoration:none;border:1px solid #333;margin:5px;display:inline-block}
+section{max-width:1100px;margin:auto;padding:40px 20px}
+.card{border:1px solid #ddd;padding:20px;margin:10px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+footer{background:#111;color:#fff;text-align:center;padding:20px}
+input,textarea{width:100%;padding:10px;margin:8px 0}
+button{padding:12px;width:100%}
+</style>
+</head>
+<body>
+<header>
+<h1>🚖 CAB SERVICE</h1>
+<p>All India Taxi Booking • 24/7 Available</p>
+</header>
+
+<div class="hero">
+<h2>Fast, Safe & Reliable Taxi Service</h2>
+<p>Local • Outstation • Airport • Railway Station</p>
+<a class="btn" href="tel:9315501154">Call: 9315501154</a>
+<a class="btn" href="https://wa.me/919315501154">WhatsApp Booking</a>
+</div>
+
+<section>
+<h2>Services</h2>
+<div class="grid">
+<div class="card">Local Taxi</div>
+<div class="card">Airport Pickup & Drop</div>
+<div class="card">Outstation Trips</div>
+<div class="card">One Way Taxi</div>
+</div>
+</section>
+
+<section>
+<h2>Book Now</h2>
+<input id="name" placeholder="Your Name">
+<input id="pickup" placeholder="Pickup Location">
+<input id="drop" placeholder="Drop Location">
+<textarea id="msg" placeholder="Trip Details"></textarea>
+<button onclick="book()">Send Booking on WhatsApp</button>
+</section>
+
+<footer>
+<p>24/7 Support: 9315501154</p>
+</footer>
+
+<script>
+function book(){
+let t='Taxi Booking%0AName: '+document.getElementById('name').value+
+'%0APickup: '+document.getElementById('pickup').value+
+'%0ADrop: '+document.getElementById('drop').value+
+'%0ADetails: '+document.getElementById('msg').value;
+window.open('https://wa.me/919315501154?text='+t);
+}
+</script>
+</body>
+</html>
